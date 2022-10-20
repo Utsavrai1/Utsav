@@ -2,9 +2,9 @@
 :root {
   --header-height: 3rem;
   --font-semi: 600;
-  --hue-color: 198;
-  --first-color: hsl(var(--hue-color), 54%, 43%);
-  --second-color: hsl(var(--hue-color), 56%, 12%);
+  --hue-color: 38;
+  --first-color: hsl(var(--hue-color), 94%, 53%);
+  --second-color: hsl(10, 56%, 12%);
   --body-font: "Poppins", sans-serif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
