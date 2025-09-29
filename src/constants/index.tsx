@@ -1,4 +1,4 @@
-import { upwork, digitalshift } from "../assets/images";
+import { upwork, digitalshift } from "@/assets/images/index";
 import {
   contact,
   css,
@@ -33,7 +33,7 @@ import {
   bitebeat,
   kafka,
   socketio,
-} from "../assets/icons";
+} from "@/assets/icons/index";
 
 export const skills = [
   {

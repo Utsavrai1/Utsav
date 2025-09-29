@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Crawl-delay is optional and not supported by all crawlers (uncomment if needed)
+# Crawl-delay: 10
+
+# Point search engines to your sitemap
+Sitemap: https://utsavrai.com/sitemap.xml

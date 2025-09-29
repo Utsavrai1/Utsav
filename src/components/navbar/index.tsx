@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-import { logo } from "../assets/images";
+import { logo } from "@/assets/images/index";
 
 const Navbar = () => {
   return (
@@ -10,7 +10,7 @@ const Navbar = () => {
       </NavLink>
       <nav className="flex text-lg gap-7 font-medium">
         <NavLink
-          to="/about"
+          to="/"
           className={({ isActive }) =>
             isActive ? "text-blue-600" : "text-black"
           }

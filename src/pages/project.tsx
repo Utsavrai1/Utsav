@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import { CTA } from "../components";
+import CTA from "@/components/cta/index";
 import { projects } from "../constants";
 import { arrow } from "../assets/icons";
 
@@ -9,7 +9,7 @@ const Projects = () => {
     <section className="max-container">
       <h1 className="head-text">
         My{" "}
-        <span className="orange-gradient-text drop-shadow font-semibold">
+        <span className="blue-gradient-text drop-shadow font-semibold">
           Projects
         </span>
       </h1>

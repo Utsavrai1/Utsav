@@ -1,13 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/src/assets/images/logo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Utsav Rai Portfolio</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Primary meta -->
+    <title>Utsav Rai — Full Stack Web Developer & Flutter Developer</title>
+    <meta
+      name="description"
+      content="Utsav Rai — Full Stack Web Developer & Flutter Developer. Portfolio showcasing web & mobile projects built with React, Node.js, and Flutter. Available for freelance and full-time roles."
+    />
+    <link rel="canonical" href="https://utsavrai.com/" />
+    <meta
+      name="keywords"
+      content="Utsav Rai, Full Stack Developer, Flutter Developer, React, Node.js, portfolio, utsavrai"
+    />
+    <meta
+      name="robots"
+      content="index, follow, max-snippet:200, max-image-preview:large"
+    />
+    <meta name="theme-color" content="#000000" />
+
+    <!-- Favicons / icons (place these files inside public/) -->
+    <link rel="icon" href="/icon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/icon.png" />
+    <meta name="msapplication-TileImage" content="/icon.png" />
+
+    <!-- Open Graph (Facebook / LinkedIn) -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Utsav Rai — Full Stack Web Developer & Flutter Developer"
+    />
+    <meta
+      property="og:description"
+      content="Portfolio of Utsav Rai — building modern web and mobile apps with React, Node.js and Flutter. Explore projects, case studies, and contact information."
+    />
+    <meta property="og:image" content="https://utsavrai.com/og-image.png" />
+    <meta
+      property="og:image:alt"
+      content="UTSAV — Full Stack Web Developer & Flutter Developer"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="https://utsavrai.com/" />
+    <meta property="og:site_name" content="Utsav Rai" />
+
+    <!-- Twitter card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Utsav Rai — Full Stack Web Developer & Flutter Developer"
+    />
+    <meta
+      name="twitter:description"
+      content="Portfolio of Utsav Rai — building modern web and mobile apps with React, Node.js and Flutter."
+    />
+    <meta name="twitter:image" content="https://utsavrai.com/og-image.png" />
+
+    <!-- Performance / fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "name": "Utsav Rai",
+            "alternateName": "UTSAV",
+            "jobTitle": "Full Stack Web Developer, Flutter Developer",
+            "url": "https://utsavrai.com/",
+            "image": "https://utsavrai.com/og-image.png",
+            "description": "Portfolio of Utsav Rai — Full Stack Web Developer and Flutter Developer building responsive web apps and cross-platform mobile experiences.",
+            "sameAs": [
+              "https://github.com/Utsavrai1",
+              "https://linkedin.com/in/raiutsav"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "url": "https://utsavrai.com/",
+            "name": "Utsav Rai",
+            "publisher": {
+              "@type": "Person",
+              "name": "Utsav Rai"
+            },
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://utsavrai.com/search?q={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          }
+        ]
+      }
+    </script>
   </head>
+
   <body>
+    <!-- Vite / React mount point -->
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+
+    <!-- Minimal accessible fallback content -->
+    <noscript>
+      <strong
+        >JavaScript is required to view this site properly. Please enable
+        JavaScript.</strong
+      >
+    </noscript>
+
+    <!-- Your React entry (Vite) -->
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
