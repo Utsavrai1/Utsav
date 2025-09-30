@@ -1,6 +1,5 @@
 import { upwork, digitalshift } from "@/assets/images/index";
 import {
-  contact,
   css,
   express,
   git,
@@ -208,11 +207,6 @@ export const experiences = [
 ];
 
 export const socialLinks = [
-  {
-    name: "Contact",
-    iconUrl: contact,
-    link: "#",
-  },
   {
     name: "GitHub",
     iconUrl: github,

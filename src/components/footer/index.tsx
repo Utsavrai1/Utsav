@@ -1,11 +1,20 @@
-// Footer.tsx
 import React from "react";
 import { Link } from "react-router-dom";
-
 import { socialLinks } from "@/constants/index";
+import { logEvent, analytics } from "@/lib/firebase";
 
 const Footer: React.FC = () => {
   const year = new Date().getFullYear();
+
+  const handleSocialClick = (name: string, url: string) => {
+    if (analytics) {
+      logEvent(analytics, "social_click", {
+        category: "engagement",
+        label: name,
+        url: url,
+      });
+    }
+  };
 
   return (
     <footer className="footer font-poppins">
@@ -20,7 +29,6 @@ const Footer: React.FC = () => {
           {socialLinks.map((link) => {
             const isExternal = /^https?:\/\//i.test(link.link);
 
-            // External: use <a>; Internal route: use <Link>
             return isExternal ? (
               <a
                 key={link.name}
@@ -29,6 +37,7 @@ const Footer: React.FC = () => {
                 rel="noopener noreferrer"
                 aria-label={link.name}
                 className="inline-block"
+                onClick={() => handleSocialClick(link.name, link.link)}
               >
                 <img
                   src={link.iconUrl}
@@ -37,7 +46,12 @@ const Footer: React.FC = () => {
                 />
               </a>
             ) : (
-              <Link key={link.name} to={link.link} aria-label={link.name}>
+              <Link
+                key={link.name}
+                to={link.link}
+                aria-label={link.name}
+                onClick={() => handleSocialClick(link.name, link.link)}
+              >
                 <img
                   src={link.iconUrl}
                   alt={link.name}
