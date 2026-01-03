@@ -20,8 +20,12 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
       <div className="mx-auto flex h-14 max-w-3xl items-center justify-between gap-4 px-4">
         {/* Logo */}
-        <Link href="/" className="flex items-center font-bold text-xl">
-          ✨
+        <Link href="/" className="flex items-center">
+          <img
+            src="/icons/logo.png"
+            alt="Utsav Rai"
+            className="h-8 w-auto"
+          />
         </Link>
 
         {/* Navigation */}

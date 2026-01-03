@@ -20,6 +20,8 @@ import {
   MonitorIcon,
   SearchIcon,
   DownloadIcon,
+  ShieldCheckIcon,
+  AwardIcon,
 } from "lucide-react";
 import { Button } from "./ui/button";
 
@@ -121,6 +123,24 @@ export function CommandMenu() {
             >
               <FileTextIcon className="mr-2 h-4 w-4" />
               Education
+            </CommandItem>
+            <CommandItem
+              onSelect={() => {
+                router.push("/#awards");
+                setOpen(false);
+              }}
+            >
+              <AwardIcon className="mr-2 h-4 w-4" />
+              Honors & Awards
+            </CommandItem>
+            <CommandItem
+              onSelect={() => {
+                router.push("/#certifications");
+                setOpen(false);
+              }}
+            >
+              <ShieldCheckIcon className="mr-2 h-4 w-4" />
+              Certifications
             </CommandItem>
           </CommandGroup>
 

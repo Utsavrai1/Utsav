@@ -1,3 +1,5 @@
+import { Awards } from "@/components/awards";
+import { Certifications } from "@/components/certifications";
 import { Education } from "@/components/education";
 import { Experiences } from "@/components/experiences";
 import { GitHubContributions } from "@/components/github-contributions";
@@ -45,6 +47,12 @@ export default function Home() {
         <Separator />
 
         <Education />
+        <Separator />
+
+        <Awards />
+        <Separator />
+
+        <Certifications />
       </div>
 
       <SiteFooter />
