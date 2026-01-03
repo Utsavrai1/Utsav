@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Disallow private/admin pages (none currently)
+# Disallow: /admin
+
+# Point search engines to your sitemap
+Sitemap: https://utsavrai.com/sitemap.xml
+
+# Host declaration
+Host: https://utsavrai.com
